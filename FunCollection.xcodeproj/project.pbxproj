@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2636F7A916BDDFFB004D9A06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636F7A816BDDFFB004D9A06 /* UIKit.framework */; };
+		2636F7AB16BDDFFB004D9A06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636F7AA16BDDFFB004D9A06 /* Foundation.framework */; };
+		2636F7AD16BDDFFB004D9A06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636F7AC16BDDFFB004D9A06 /* CoreGraphics.framework */; };
+		2636F7B316BDDFFB004D9A06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7B116BDDFFB004D9A06 /* InfoPlist.strings */; };
+		2636F7B516BDDFFB004D9A06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636F7B416BDDFFB004D9A06 /* main.m */; };
+		2636F7B916BDDFFB004D9A06 /* FunAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636F7B816BDDFFB004D9A06 /* FunAppDelegate.m */; };
+		2636F7BB16BDDFFB004D9A06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7BA16BDDFFB004D9A06 /* Default.png */; };
+		2636F7BD16BDDFFB004D9A06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7BC16BDDFFB004D9A06 /* Default@2x.png */; };
+		2636F7BF16BDDFFB004D9A06 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7BE16BDDFFB004D9A06 /* Default-568h@2x.png */; };
+		2636F7C216BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7C016BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard */; };
+		2636F7C516BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7C316BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard */; };
+		2636F7C816BDDFFB004D9A06 /* FunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636F7C716BDDFFB004D9A06 /* FunViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2636F7A416BDDFFB004D9A06 /* FunCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2636F7A816BDDFFB004D9A06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2636F7AA16BDDFFB004D9A06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2636F7AC16BDDFFB004D9A06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2636F7B016BDDFFB004D9A06 /* FunCollection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunCollection-Info.plist"; sourceTree = "<group>"; };
+		2636F7B216BDDFFB004D9A06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2636F7B416BDDFFB004D9A06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2636F7B616BDDFFB004D9A06 /* FunCollection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunCollection-Prefix.pch"; sourceTree = "<group>"; };
+		2636F7B716BDDFFB004D9A06 /* FunAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunAppDelegate.h; sourceTree = "<group>"; };
+		2636F7B816BDDFFB004D9A06 /* FunAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunAppDelegate.m; sourceTree = "<group>"; };
+		2636F7BA16BDDFFB004D9A06 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2636F7BC16BDDFFB004D9A06 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2636F7BE16BDDFFB004D9A06 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2636F7C116BDDFFB004D9A06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		2636F7C416BDDFFB004D9A06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		2636F7C616BDDFFB004D9A06 /* FunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunViewController.h; sourceTree = "<group>"; };
+		2636F7C716BDDFFB004D9A06 /* FunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2636F7A116BDDFFB004D9A06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2636F7A916BDDFFB004D9A06 /* UIKit.framework in Frameworks */,
+				2636F7AB16BDDFFB004D9A06 /* Foundation.framework in Frameworks */,
+				2636F7AD16BDDFFB004D9A06 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2636F79916BDDFFB004D9A06 = {
+			isa = PBXGroup;
+			children = (
+				2636F7AE16BDDFFB004D9A06 /* FunCollection */,
+				2636F7A716BDDFFB004D9A06 /* Frameworks */,
+				2636F7A516BDDFFB004D9A06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2636F7A516BDDFFB004D9A06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2636F7A416BDDFFB004D9A06 /* FunCollection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2636F7A716BDDFFB004D9A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2636F7A816BDDFFB004D9A06 /* UIKit.framework */,
+				2636F7AA16BDDFFB004D9A06 /* Foundation.framework */,
+				2636F7AC16BDDFFB004D9A06 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2636F7AE16BDDFFB004D9A06 /* FunCollection */ = {
+			isa = PBXGroup;
+			children = (
+				2636F7B716BDDFFB004D9A06 /* FunAppDelegate.h */,
+				2636F7B816BDDFFB004D9A06 /* FunAppDelegate.m */,
+				2636F7C016BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard */,
+				2636F7C316BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard */,
+				2636F7C616BDDFFB004D9A06 /* FunViewController.h */,
+				2636F7C716BDDFFB004D9A06 /* FunViewController.m */,
+				2636F7AF16BDDFFB004D9A06 /* Supporting Files */,
+			);
+			path = FunCollection;
+			sourceTree = "<group>";
+		};
+		2636F7AF16BDDFFB004D9A06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2636F7B016BDDFFB004D9A06 /* FunCollection-Info.plist */,
+				2636F7B116BDDFFB004D9A06 /* InfoPlist.strings */,
+				2636F7B416BDDFFB004D9A06 /* main.m */,
+				2636F7B616BDDFFB004D9A06 /* FunCollection-Prefix.pch */,
+				2636F7BA16BDDFFB004D9A06 /* Default.png */,
+				2636F7BC16BDDFFB004D9A06 /* Default@2x.png */,
+				2636F7BE16BDDFFB004D9A06 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2636F7A316BDDFFB004D9A06 /* FunCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2636F7CB16BDDFFB004D9A06 /* Build configuration list for PBXNativeTarget "FunCollection" */;
+			buildPhases = (
+				2636F7A016BDDFFB004D9A06 /* Sources */,
+				2636F7A116BDDFFB004D9A06 /* Frameworks */,
+				2636F7A216BDDFFB004D9A06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunCollection;
+			productName = FunCollection;
+			productReference = 2636F7A416BDDFFB004D9A06 /* FunCollection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2636F79B16BDDFFB004D9A06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Fun;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Sarah Allen";
+			};
+			buildConfigurationList = 2636F79E16BDDFFB004D9A06 /* Build configuration list for PBXProject "FunCollection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2636F79916BDDFFB004D9A06;
+			productRefGroup = 2636F7A516BDDFFB004D9A06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2636F7A316BDDFFB004D9A06 /* FunCollection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2636F7A216BDDFFB004D9A06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2636F7B316BDDFFB004D9A06 /* InfoPlist.strings in Resources */,
+				2636F7BB16BDDFFB004D9A06 /* Default.png in Resources */,
+				2636F7BD16BDDFFB004D9A06 /* Default@2x.png in Resources */,
+				2636F7BF16BDDFFB004D9A06 /* Default-568h@2x.png in Resources */,
+				2636F7C216BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard in Resources */,
+				2636F7C516BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2636F7A016BDDFFB004D9A06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2636F7B516BDDFFB004D9A06 /* main.m in Sources */,
+				2636F7B916BDDFFB004D9A06 /* FunAppDelegate.m in Sources */,
+				2636F7C816BDDFFB004D9A06 /* FunViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2636F7B116BDDFFB004D9A06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2636F7B216BDDFFB004D9A06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2636F7C016BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2636F7C116BDDFFB004D9A06 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2636F7C316BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2636F7C416BDDFFB004D9A06 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2636F7C916BDDFFB004D9A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2636F7CA16BDDFFB004D9A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2636F7CC16BDDFFB004D9A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunCollection/FunCollection-Prefix.pch";
+				INFOPLIST_FILE = "FunCollection/FunCollection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2636F7CD16BDDFFB004D9A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunCollection/FunCollection-Prefix.pch";
+				INFOPLIST_FILE = "FunCollection/FunCollection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2636F79E16BDDFFB004D9A06 /* Build configuration list for PBXProject "FunCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2636F7C916BDDFFB004D9A06 /* Debug */,
+				2636F7CA16BDDFFB004D9A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2636F7CB16BDDFFB004D9A06 /* Build configuration list for PBXNativeTarget "FunCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2636F7CC16BDDFFB004D9A06 /* Debug */,
+				2636F7CD16BDDFFB004D9A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2636F79B16BDDFFB004D9A06 /* Project object */;
+}
