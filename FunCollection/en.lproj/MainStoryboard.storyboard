@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BWO-zO-qnh">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellID" id="BWO-zO-qnh">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -101,6 +101,31 @@
             <point key="canvasLocation" x="-26" y="68"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="FunViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FunViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="switchLayout:"/>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="layoutNameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
