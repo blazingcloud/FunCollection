@@ -77,4 +77,9 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     return UIEdgeInsetsMake(50, 20, 50, 20);
 }
 
+#pragma mark – custom actions
+- (IBAction)switchLayout:(id)sender {
+    NSLog ( @"switchLayout called" );
+
+}
 @end

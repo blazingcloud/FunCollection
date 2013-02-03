@@ -16,9 +16,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" type="user" id="TSh-au-fWq"/>
-                                    <constraint firstAttribute="height" constant="467" type="user" id="YJ0-CW-DPO"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" type="user" id="j4f-yW-q1u"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" type="user" id="pUb-qf-3UK"/>
+                                    <constraint firstAttribute="height" constant="452" type="user" id="wBd-Kt-sY4"/>
                                     <constraint firstAttribute="width" constant="300" type="user" id="z1r-tD-TKv"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cyQ-qC-Fll">
@@ -45,7 +45,9 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Y1-Uj-oae">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="151" id="1wE-O8-7ud"/>
+                                    <constraint firstAttribute="width" constant="151" type="user" id="1wE-O8-7ud"/>
+                                    <constraint firstAttribute="height" constant="43" type="user" id="cqd-K3-dXg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" type="user" id="tV0-PP-NPz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Tap">
@@ -55,20 +57,43 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="switchLayout:" destination="2" eventType="touchUpInside" id="som-dU-0nd"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Flow Layout" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhW-pc-Z6f">
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" type="user" id="71h-TE-uJr"/>
+                                    <constraint firstAttribute="width" constant="151" type="user" id="GUq-xo-21R"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" type="user" id="hxG-lv-wet"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" type="user" id="iaN-UM-zIK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Y1-Uj-oae" secondAttribute="trailing" constant="85" type="user" id="19Y-Dq-GSk"/>
+                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3" secondAttribute="leading" constant="84" type="user" id="28m-1J-Rii"/>
+                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="top" secondItem="k1L-RD-MS9" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="3hr-ev-qTd"/>
+                            <constraint firstAttribute="bottom" secondItem="6Y1-Uj-oae" secondAttribute="bottom" constant="33" type="user" id="8Go-0D-lbS"/>
                             <constraint firstAttribute="trailing" secondItem="k1L-RD-MS9" secondAttribute="trailing" constant="10" type="user" id="F6j-rP-2fw"/>
-                            <constraint firstItem="k1L-RD-MS9" firstAttribute="centerX" secondItem="6Y1-Uj-oae" secondAttribute="centerX" type="default" id="G4e-dk-F1L"/>
+                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="84" type="user" id="Jsu-8h-2yE"/>
                             <constraint firstItem="k1L-RD-MS9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="12" type="user" id="PQI-dn-zZr"/>
-                            <constraint firstAttribute="bottom" secondItem="k1L-RD-MS9" secondAttribute="bottom" constant="69" type="user" id="Xwg-bz-y0E"/>
+                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="trailing" secondItem="6Y1-Uj-oae" secondAttribute="trailing" type="user" id="T8i-PR-Fpw"/>
+                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="leading" secondItem="6Y1-Uj-oae" secondAttribute="leading" type="user" id="WFm-g8-oEH"/>
+                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="ZFQ-1r-5U4"/>
                             <constraint firstAttribute="centerX" secondItem="k1L-RD-MS9" secondAttribute="centerX" type="user" id="eUa-rY-Q0V"/>
-                            <constraint firstAttribute="bottom" secondItem="6Y1-Uj-oae" secondAttribute="bottom" constant="15" id="vUn-kE-PZy"/>
+                            <constraint firstAttribute="trailing" secondItem="XhW-pc-Z6f" secondAttribute="trailing" constant="85" type="user" id="feo-eC-hHP"/>
+                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="84" type="user" id="iJM-dN-UxQ"/>
+                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="oeO-Vx-oCj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="k1L-RD-MS9" id="ZLr-H2-D2E"/>
+                        <outlet property="layoutNameField" destination="XhW-pc-Z6f" id="4Lv-0e-wC0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>

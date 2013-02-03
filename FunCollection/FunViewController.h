@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FunViewController : UIViewController
+- (IBAction)switchLayout:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *layoutNameField;
 
 @end
