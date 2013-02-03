@@ -43,6 +43,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         return;
     
     UICollectionViewLayout *newLayout = nil;
+    LineLayout *newLineLayout = nil;
     
     switch (layoutStyle)
     {
@@ -51,8 +52,16 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
             break;
             
         case LayoutStyleLine:
-            newLayout = [[LineLayout alloc] init];
-            break;
+        {
+            newLineLayout = [[LineLayout alloc] init];
+            
+            UICollectionView* view = self.collectionView;
+            CGFloat height = view.bounds.size.height;
+            CGFloat top = height - newLineLayout.itemSize.height - 10;
+            newLineLayout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
+            newLayout = newLineLayout;
+        }
+        break;
             
         default:
             break;

@@ -18,18 +18,34 @@
     self = [super init];
     if (self)
     {
-        //self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         self.itemSize = (CGSize){60, 20};
                 
         self.minimumLineSpacing = 50.0;
         self.minimumInteritemSpacing = 50.0;
         
-//        CGSize viewSize = self.collectionView.bounds.size;
-//        CGFloat top = viewSize.height - self.itemSize.height;
-//        self.sectionInset = UIEdgeInsetsMake(0, top, 0, 0);
+        self.sectionInset = UIEdgeInsetsMake(200, 0, 200, 0);
 
     }
     return self;
+}
+
+- (void)prepareLayout
+{
+    // call super so flow layout can do all the math for cells, headers, and footers
+    [super prepareLayout];
+    // do stuff
+}
+
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
+{
+//    UICollectionView* view = self.collectionView;
+//    CGFloat height = view.bounds.size.height;
+//    CGFloat top = height - self.itemSize.height;
+//    CGPoint offset = view.contentOffset;
+//    self.sectionInset = UIEdgeInsetsMake(offset.x, top, 0, 0);
+
+    return YES;
 }
 
 @end
