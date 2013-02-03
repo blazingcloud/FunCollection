@@ -16,9 +16,8 @@
 		2636F7BB16BDDFFB004D9A06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7BA16BDDFFB004D9A06 /* Default.png */; };
 		2636F7BD16BDDFFB004D9A06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7BC16BDDFFB004D9A06 /* Default@2x.png */; };
 		2636F7BF16BDDFFB004D9A06 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7BE16BDDFFB004D9A06 /* Default-568h@2x.png */; };
-		2636F7C216BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7C016BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard */; };
-		2636F7C516BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7C316BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard */; };
 		2636F7C816BDDFFB004D9A06 /* FunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636F7C716BDDFFB004D9A06 /* FunViewController.m */; };
+		2649D8D416BDE32200C62503 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2649D8D216BDE32200C62503 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +34,9 @@
 		2636F7BA16BDDFFB004D9A06 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2636F7BC16BDDFFB004D9A06 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2636F7BE16BDDFFB004D9A06 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2636F7C116BDDFFB004D9A06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		2636F7C416BDDFFB004D9A06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		2636F7C616BDDFFB004D9A06 /* FunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunViewController.h; sourceTree = "<group>"; };
 		2636F7C716BDDFFB004D9A06 /* FunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunViewController.m; sourceTree = "<group>"; };
+		2649D8D316BDE32200C62503 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +85,8 @@
 			children = (
 				2636F7B716BDDFFB004D9A06 /* FunAppDelegate.h */,
 				2636F7B816BDDFFB004D9A06 /* FunAppDelegate.m */,
-				2636F7C016BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard */,
-				2636F7C316BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard */,
 				2636F7C616BDDFFB004D9A06 /* FunViewController.h */,
+				2649D8D216BDE32200C62503 /* MainStoryboard.storyboard */,
 				2636F7C716BDDFFB004D9A06 /* FunViewController.m */,
 				2636F7AF16BDDFFB004D9A06 /* Supporting Files */,
 			);
@@ -166,8 +163,7 @@
 				2636F7BB16BDDFFB004D9A06 /* Default.png in Resources */,
 				2636F7BD16BDDFFB004D9A06 /* Default@2x.png in Resources */,
 				2636F7BF16BDDFFB004D9A06 /* Default-568h@2x.png in Resources */,
-				2636F7C216BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard in Resources */,
-				2636F7C516BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard in Resources */,
+				2649D8D416BDE32200C62503 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,20 +191,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2636F7C016BDDFFB004D9A06 /* MainStoryboard_iPhone.storyboard */ = {
+		2649D8D216BDE32200C62503 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2636F7C116BDDFFB004D9A06 /* en */,
+				2649D8D316BDE32200C62503 /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		2636F7C316BDDFFB004D9A06 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2636F7C416BDDFFB004D9A06 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -307,6 +295,7 @@
 				2636F7CD16BDDFFB004D9A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
