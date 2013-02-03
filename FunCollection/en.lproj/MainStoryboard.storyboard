@@ -15,8 +15,11 @@
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k1L-RD-MS9">
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="276" id="Xy5-xL-kCF"/>
-                                    <constraint firstAttribute="width" constant="292" id="pUb-qf-3UK"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" type="user" id="TSh-au-fWq"/>
+                                    <constraint firstAttribute="height" constant="467" type="user" id="YJ0-CW-DPO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" type="user" id="j4f-yW-q1u"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" type="user" id="pUb-qf-3UK"/>
+                                    <constraint firstAttribute="width" constant="300" type="user" id="z1r-tD-TKv"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cyQ-qC-Fll">
                                     <size key="itemSize" width="50" height="50"/>
@@ -52,15 +55,18 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Fbz-2f-V7X"/>
-                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="centerX" secondItem="k1L-RD-MS9" secondAttribute="centerX" type="default" id="dUW-vd-xr1"/>
-                            <constraint firstAttribute="bottom" secondItem="6Y1-Uj-oae" secondAttribute="bottom" constant="133" id="flM-P5-OWL"/>
-                            <constraint firstItem="k1L-RD-MS9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="45" id="zAH-iP-BBO"/>
+                            <constraint firstAttribute="trailing" secondItem="k1L-RD-MS9" secondAttribute="trailing" constant="10" type="user" id="F6j-rP-2fw"/>
+                            <constraint firstItem="k1L-RD-MS9" firstAttribute="centerX" secondItem="6Y1-Uj-oae" secondAttribute="centerX" type="default" id="G4e-dk-F1L"/>
+                            <constraint firstItem="k1L-RD-MS9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="12" type="user" id="PQI-dn-zZr"/>
+                            <constraint firstAttribute="bottom" secondItem="k1L-RD-MS9" secondAttribute="bottom" constant="69" type="user" id="Xwg-bz-y0E"/>
+                            <constraint firstAttribute="centerX" secondItem="k1L-RD-MS9" secondAttribute="centerX" type="user" id="eUa-rY-Q0V"/>
+                            <constraint firstAttribute="bottom" secondItem="6Y1-Uj-oae" secondAttribute="bottom" constant="15" id="vUn-kE-PZy"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-26" y="68"/>
         </scene>
     </scenes>
     <classes>
