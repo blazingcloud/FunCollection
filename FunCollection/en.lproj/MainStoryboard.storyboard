@@ -61,17 +61,6 @@
                                     <action selector="switchLayout:" destination="2" eventType="touchUpInside" id="som-dU-0nd"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Flow Layout" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhW-pc-Z6f">
-                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" type="user" id="71h-TE-uJr"/>
-                                    <constraint firstAttribute="width" constant="151" type="user" id="GUq-xo-21R"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" type="user" id="hxG-lv-wet"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" type="user" id="iaN-UM-zIK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -80,20 +69,13 @@
                             <constraint firstItem="6Y1-Uj-oae" firstAttribute="top" secondItem="k1L-RD-MS9" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="3hr-ev-qTd"/>
                             <constraint firstAttribute="bottom" secondItem="6Y1-Uj-oae" secondAttribute="bottom" constant="33" type="user" id="8Go-0D-lbS"/>
                             <constraint firstAttribute="trailing" secondItem="k1L-RD-MS9" secondAttribute="trailing" constant="10" type="user" id="F6j-rP-2fw"/>
-                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="84" type="user" id="Jsu-8h-2yE"/>
                             <constraint firstItem="k1L-RD-MS9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="12" type="user" id="PQI-dn-zZr"/>
-                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="trailing" secondItem="6Y1-Uj-oae" secondAttribute="trailing" type="user" id="T8i-PR-Fpw"/>
-                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="leading" secondItem="6Y1-Uj-oae" secondAttribute="leading" type="user" id="WFm-g8-oEH"/>
-                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="ZFQ-1r-5U4"/>
                             <constraint firstAttribute="centerX" secondItem="k1L-RD-MS9" secondAttribute="centerX" type="user" id="eUa-rY-Q0V"/>
-                            <constraint firstAttribute="trailing" secondItem="XhW-pc-Z6f" secondAttribute="trailing" constant="85" type="user" id="feo-eC-hHP"/>
                             <constraint firstItem="6Y1-Uj-oae" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="84" type="user" id="iJM-dN-UxQ"/>
-                            <constraint firstItem="XhW-pc-Z6f" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="oeO-Vx-oCj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="k1L-RD-MS9" id="ZLr-H2-D2E"/>
-                        <outlet property="layoutNameField" destination="XhW-pc-Z6f" id="4Lv-0e-wC0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -101,31 +83,6 @@
             <point key="canvasLocation" x="-26" y="68"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="FunViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FunViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="switchLayout:"/>
-                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
-                <relationship kind="outlet" name="layoutNameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
