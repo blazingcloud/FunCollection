@@ -19,13 +19,11 @@
     if (self)
     {
         self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        self.itemSize = (CGSize){60, 20};
+        self.itemSize = (CGSize){60, 50};
                 
-        self.minimumLineSpacing = 50.0;
-        self.minimumInteritemSpacing = 50.0;
+        self.minimumLineSpacing = 5.0;
+        self.minimumInteritemSpacing = 5.0;
         
-        self.sectionInset = UIEdgeInsetsMake(200, 0, 200, 0);
-
     }
     return self;
 }

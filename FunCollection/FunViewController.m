@@ -7,6 +7,7 @@
 //
 
 #import "FunViewController.h"
+#import "GridLayout.h"
 #import "LineLayout.h"
 
 NSString *kCellID = @"cellID";                          // UICollectionViewCell storyboard id
@@ -28,6 +29,9 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellID"];
 
+    [self setLayoutStyle:LayoutStyleGrid animated:NO];
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,7 +52,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     switch (layoutStyle)
     {
         case LayoutStyleGrid:
-            newLayout = [[UICollectionViewFlowLayout alloc] init];
+            newLayout = [[GridLayout alloc] init];
             break;
             
         case LayoutStyleLine:
