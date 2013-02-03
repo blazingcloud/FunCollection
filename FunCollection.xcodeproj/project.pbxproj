@@ -18,6 +18,8 @@
 		2636F7BF16BDDFFB004D9A06 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2636F7BE16BDDFFB004D9A06 /* Default-568h@2x.png */; };
 		2636F7C816BDDFFB004D9A06 /* FunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2636F7C716BDDFFB004D9A06 /* FunViewController.m */; };
 		2649D8D416BDE32200C62503 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2649D8D216BDE32200C62503 /* MainStoryboard.storyboard */; };
+		26ADEAA516BEE59D00687919 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAA416BEE59D00687919 /* LineLayout.m */; };
+		26ADEAA816BEFA9B00687919 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ADEAA716BEFA9B00687919 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		2636F7C616BDDFFB004D9A06 /* FunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunViewController.h; sourceTree = "<group>"; };
 		2636F7C716BDDFFB004D9A06 /* FunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunViewController.m; sourceTree = "<group>"; };
 		2649D8D316BDE32200C62503 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		26ADEAA316BEE59D00687919 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		26ADEAA416BEE59D00687919 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
+		26ADEAA716BEFA9B00687919 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26ADEAA816BEFA9B00687919 /* QuartzCore.framework in Frameworks */,
 				2636F7A916BDDFFB004D9A06 /* UIKit.framework in Frameworks */,
 				2636F7AB16BDDFFB004D9A06 /* Foundation.framework in Frameworks */,
 				2636F7AD16BDDFFB004D9A06 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +62,7 @@
 		2636F79916BDDFFB004D9A06 = {
 			isa = PBXGroup;
 			children = (
+				26ADEAA716BEFA9B00687919 /* QuartzCore.framework */,
 				2636F7AE16BDDFFB004D9A06 /* FunCollection */,
 				2636F7A716BDDFFB004D9A06 /* Frameworks */,
 				2636F7A516BDDFFB004D9A06 /* Products */,
@@ -88,6 +95,8 @@
 				2636F7C616BDDFFB004D9A06 /* FunViewController.h */,
 				2649D8D216BDE32200C62503 /* MainStoryboard.storyboard */,
 				2636F7C716BDDFFB004D9A06 /* FunViewController.m */,
+				26ADEAA316BEE59D00687919 /* LineLayout.h */,
+				26ADEAA416BEE59D00687919 /* LineLayout.m */,
 				2636F7AF16BDDFFB004D9A06 /* Supporting Files */,
 			);
 			path = FunCollection;
@@ -177,6 +186,7 @@
 				2636F7B516BDDFFB004D9A06 /* main.m in Sources */,
 				2636F7B916BDDFFB004D9A06 /* FunAppDelegate.m in Sources */,
 				2636F7C816BDDFFB004D9A06 /* FunViewController.m in Sources */,
+				26ADEAA516BEE59D00687919 /* LineLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
