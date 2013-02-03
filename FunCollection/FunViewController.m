@@ -9,6 +9,7 @@
 #import "FunViewController.h"
 #import "GridLayout.h"
 #import "LineLayout.h"
+#import "SimpleColorCell.h"
 
 NSString *kCellID = @"cellID";                          // UICollectionViewCell storyboard id
 
@@ -27,7 +28,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellID"];
+    [self.collectionView registerClass:[SimpleColorCell class] forCellWithReuseIdentifier:@"cellID"];
 
     [self setLayoutStyle:LayoutStyleGrid animated:NO];
 
@@ -100,8 +101,8 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 }
 // 3
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"cellID" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
+    SimpleColorCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"cellID" forIndexPath:indexPath];
+    cell.label.text = [NSString stringWithFormat:@"%d",indexPath.item];
     return cell;
 }
 

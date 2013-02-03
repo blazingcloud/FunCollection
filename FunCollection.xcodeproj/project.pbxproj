@@ -21,6 +21,7 @@
 		26ADEAA516BEE59D00687919 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAA416BEE59D00687919 /* LineLayout.m */; };
 		26ADEAA816BEFA9B00687919 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ADEAA716BEFA9B00687919 /* QuartzCore.framework */; };
 		26ADEAAF16BF23EE00687919 /* GridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAAE16BF23EE00687919 /* GridLayout.m */; };
+		26ADEAB216BF26D700687919 /* SimpleColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAB116BF26D700687919 /* SimpleColorCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		26ADEAA716BEFA9B00687919 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		26ADEAAD16BF23EE00687919 /* GridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridLayout.h; sourceTree = "<group>"; };
 		26ADEAAE16BF23EE00687919 /* GridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridLayout.m; sourceTree = "<group>"; };
+		26ADEAB016BF26D700687919 /* SimpleColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleColorCell.h; sourceTree = "<group>"; };
+		26ADEAB116BF26D700687919 /* SimpleColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleColorCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				2636F7B816BDDFFB004D9A06 /* FunAppDelegate.m */,
 				2636F7C616BDDFFB004D9A06 /* FunViewController.h */,
 				2649D8D216BDE32200C62503 /* MainStoryboard.storyboard */,
+				26ADEAB016BF26D700687919 /* SimpleColorCell.h */,
+				26ADEAB116BF26D700687919 /* SimpleColorCell.m */,
 				2636F7C716BDDFFB004D9A06 /* FunViewController.m */,
 				26ADEAA316BEE59D00687919 /* LineLayout.h */,
 				26ADEAA416BEE59D00687919 /* LineLayout.m */,
@@ -193,6 +198,7 @@
 				2636F7C816BDDFFB004D9A06 /* FunViewController.m in Sources */,
 				26ADEAA516BEE59D00687919 /* LineLayout.m in Sources */,
 				26ADEAAF16BF23EE00687919 /* GridLayout.m in Sources */,
+				26ADEAB216BF26D700687919 /* SimpleColorCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
