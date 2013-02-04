@@ -23,6 +23,7 @@
 		26ADEAAF16BF23EE00687919 /* GridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAAE16BF23EE00687919 /* GridLayout.m */; };
 		26ADEAB216BF26D700687919 /* SimpleColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAB116BF26D700687919 /* SimpleColorCell.m */; };
 		26ADEAB516BF312D00687919 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAB416BF312D00687919 /* CustomCellBackground.m */; };
+		26ADEAE316BF56C900687919 /* LineFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAE216BF56C900687919 /* LineFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		26ADEAB116BF26D700687919 /* SimpleColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleColorCell.m; sourceTree = "<group>"; };
 		26ADEAB316BF312D00687919 /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
 		26ADEAB416BF312D00687919 /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		26ADEAE116BF56C900687919 /* LineFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LineFlowLayout.h; path = ../LineFlowLayout.h; sourceTree = "<group>"; };
+		26ADEAE216BF56C900687919 /* LineFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LineFlowLayout.m; path = ../LineFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +74,6 @@
 		2636F79916BDDFFB004D9A06 = {
 			isa = PBXGroup;
 			children = (
-				26ADEAA716BEFA9B00687919 /* QuartzCore.framework */,
 				2636F7AE16BDDFFB004D9A06 /* FunCollection */,
 				2636F7A716BDDFFB004D9A06 /* Frameworks */,
 				2636F7A516BDDFFB004D9A06 /* Products */,
@@ -89,6 +91,7 @@
 		2636F7A716BDDFFB004D9A06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26ADEAA716BEFA9B00687919 /* QuartzCore.framework */,
 				2636F7A816BDDFFB004D9A06 /* UIKit.framework */,
 				2636F7AA16BDDFFB004D9A06 /* Foundation.framework */,
 				2636F7AC16BDDFFB004D9A06 /* CoreGraphics.framework */,
@@ -106,6 +109,8 @@
 				26ADEAB016BF26D700687919 /* SimpleColorCell.h */,
 				26ADEAB116BF26D700687919 /* SimpleColorCell.m */,
 				2636F7C716BDDFFB004D9A06 /* FunViewController.m */,
+				26ADEAE116BF56C900687919 /* LineFlowLayout.h */,
+				26ADEAE216BF56C900687919 /* LineFlowLayout.m */,
 				26ADEAA316BEE59D00687919 /* LineLayout.h */,
 				26ADEAA416BEE59D00687919 /* LineLayout.m */,
 				26ADEAAD16BF23EE00687919 /* GridLayout.h */,
@@ -205,6 +210,7 @@
 				26ADEAAF16BF23EE00687919 /* GridLayout.m in Sources */,
 				26ADEAB216BF26D700687919 /* SimpleColorCell.m in Sources */,
 				26ADEAB516BF312D00687919 /* CustomCellBackground.m in Sources */,
+				26ADEAE316BF56C900687919 /* LineFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

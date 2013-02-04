@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 enum {
+    LayoutStyleLineFlow,
     LayoutStyleGrid,
     LayoutStyleLine,
     LayoutStyleCount

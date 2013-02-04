@@ -37,11 +37,6 @@
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
 {
-//    UICollectionView* view = self.collectionView;
-//    CGFloat height = view.bounds.size.height;
-//    CGFloat top = height - self.itemSize.height;
-//    CGPoint offset = view.contentOffset;
-//    self.sectionInset = UIEdgeInsetsMake(offset.x, top, 0, 0);
 
     return YES;
 }

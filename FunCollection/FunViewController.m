@@ -9,6 +9,7 @@
 #import "FunViewController.h"
 #import "GridLayout.h"
 #import "LineLayout.h"
+#import "LineFlowLayout.h"
 #import "SimpleColorCell.h"
 
 NSString *kCellID = @"cellID";                          // UICollectionViewCell storyboard id
@@ -58,7 +59,15 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 
         }
         break;
+           
+        case LayoutStyleLineFlow:
+        {
+            LineFlowLayout *newLineFlowLayout = [[LineFlowLayout alloc] init];
+            newLayout = newLineFlowLayout;
             
+        }
+        break;
+
         case LayoutStyleLine:
         {
             LineLayout *newLineLayout = [[LineLayout alloc] init];
