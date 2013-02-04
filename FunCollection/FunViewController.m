@@ -48,17 +48,20 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         return;
     
     UICollectionViewLayout *newLayout = nil;
-    LineLayout *newLineLayout = nil;
     
     switch (layoutStyle)
     {
         case LayoutStyleGrid:
-            newLayout = [[GridLayout alloc] init];
-            break;
+        {
+            GridLayout *newGridLayout = [[GridLayout alloc] init];
+            newLayout = newGridLayout;
+
+        }
+        break;
             
         case LayoutStyleLine:
         {
-            newLineLayout = [[LineLayout alloc] init];
+            LineLayout *newLineLayout = [[LineLayout alloc] init];
             
             UICollectionView* view = self.collectionView;
             CGFloat height = view.bounds.size.height;
