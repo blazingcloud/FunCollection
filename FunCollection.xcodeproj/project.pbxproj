@@ -22,6 +22,7 @@
 		26ADEAA816BEFA9B00687919 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ADEAA716BEFA9B00687919 /* QuartzCore.framework */; };
 		26ADEAAF16BF23EE00687919 /* GridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAAE16BF23EE00687919 /* GridLayout.m */; };
 		26ADEAB216BF26D700687919 /* SimpleColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAB116BF26D700687919 /* SimpleColorCell.m */; };
+		26ADEAB516BF312D00687919 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ADEAB416BF312D00687919 /* CustomCellBackground.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		26ADEAAE16BF23EE00687919 /* GridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridLayout.m; sourceTree = "<group>"; };
 		26ADEAB016BF26D700687919 /* SimpleColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleColorCell.h; sourceTree = "<group>"; };
 		26ADEAB116BF26D700687919 /* SimpleColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleColorCell.m; sourceTree = "<group>"; };
+		26ADEAB316BF312D00687919 /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		26ADEAB416BF312D00687919 /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				26ADEAAD16BF23EE00687919 /* GridLayout.h */,
 				26ADEAAE16BF23EE00687919 /* GridLayout.m */,
 				2636F7AF16BDDFFB004D9A06 /* Supporting Files */,
+				26ADEAB316BF312D00687919 /* CustomCellBackground.h */,
+				26ADEAB416BF312D00687919 /* CustomCellBackground.m */,
 			);
 			path = FunCollection;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				26ADEAA516BEE59D00687919 /* LineLayout.m in Sources */,
 				26ADEAAF16BF23EE00687919 /* GridLayout.m in Sources */,
 				26ADEAB216BF26D700687919 /* SimpleColorCell.m in Sources */,
+				26ADEAB516BF312D00687919 /* CustomCellBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

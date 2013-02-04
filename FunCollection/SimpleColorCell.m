@@ -7,6 +7,7 @@
 //
 
 #import "SimpleColorCell.h"
+#import "CustomCellBackground.h"
 
 @implementation SimpleColorCell
 
@@ -17,13 +18,18 @@
         self.label = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, frame.size.width, frame.size.height)];
         self.label.textAlignment = NSTextAlignmentCenter;
         self.label.textColor = [UIColor blackColor];
+        self.label.backgroundColor = [UIColor clearColor];
         self.label.font = [UIFont boldSystemFontOfSize:35.0];
         
         UIColor *color = [UIColor colorWithRed:(random()%100)/(float)100 green:(random()%100)/(float)100 blue:(random()%100)/(float)100 alpha:1];
-        self.label.backgroundColor = color;
         self.backgroundColor = color;
         
-        [self.contentView addSubview:self.label];;
+        [self.contentView addSubview:self.label];
+        
+        // change to our custom selected background view
+        CustomCellBackground *backgroundView = [[CustomCellBackground alloc] initWithFrame:CGRectZero];
+        self.selectedBackgroundView = backgroundView;
+
     }
     return self;
 }
