@@ -65,7 +65,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
             
             UICollectionView* view = self.collectionView;
             CGFloat height = view.bounds.size.height;
-            CGFloat top = height - newLineLayout.itemSize.height - 10;
+            CGFloat top = height - newLineLayout.itemSize.height - 90;
             newLineLayout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
             newLayout = newLineLayout;
         }
@@ -118,6 +118,11 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     // TODO: Deselect item
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewFlowLayout *layout = collectionViewLayout;
+    CGFloat width = layout.itemSize.width;
+    return CGSizeMake(width, width + (indexPath.item % 5)*20);
+}
 
 #pragma mark – custom actions
 
