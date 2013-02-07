@@ -8,6 +8,11 @@
 
 #import "LineLayout.h"
 
+@interface LineLayout ()
+@property(nonatomic,strong) NSMutableArray *itemAttributes;
+
+@end
+
 @implementation LineLayout
 #define ACTIVE_DISTANCE 200
 #define ZOOM_FACTOR 0.3
@@ -29,24 +34,23 @@
 
 - (void)prepareLayout
 {
+    
     // call super so flow layout can do all the math for cells, headers, and footers
     [super prepareLayout];
-
-    CGFloat contianerWidth = self.collectionView.bounds.size.width;
-    
-    NSInteger columnCount = floorf((contianerWidth - self.minMargin *2) / self.itemSize.width);
-    
+        
     NSInteger itemCount = [[self collectionView] numberOfItemsInSection:0];
     
-    self.itemHeightArray = [NSMutableArray arrayWithCapacity:itemCount];
-
-    for (NSInteger i = 0; i < itemCount; i++) {
-        NSIndexPath* indexPath = [NSIndexPath indexPathForItem:i inSection:0];
-        
-        CGSize size = [self collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
-
-        self.itemHeightArray[i] = size.height;
+    _itemAttributes = [NSMutableArray arrayWithCapacity:itemCount];
+    int currentx = self.minMargin;
+    
+    for (int i = 0; i < itemCount; i++) {
+        UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes new];
+        attr.frame = CGRectMake(currentx, 0, self.itemSize.width, self.itemSize.height);
+        [_itemAttributes addObject:attr];
+        currentx += self.itemSize.width + self.interItemSpacing;
     }
+
+    
 }
 
 
@@ -61,17 +65,22 @@
 - (CGSize)collectionViewContentSize
 {
     NSInteger itemCount = [[self collectionView] numberOfItemsInSection:0];
-    NSInteger columnCount = 0;
     
-    CGSize containerSize = self.collectionView.bounds.size;
-    columnCount = floorf((containerSize.width - self.minMargin *2)/self.itemSize.width);
-    
+    return CGSizeMake((self.itemSize.width+self.interItemSpacing) * itemCount + self.minMargin*2, self.itemSize.height);
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    
-    
+    return [self.itemAttributes filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(UICollectionViewLayoutAttributes *evaluatedObject, NSDictionary *bindings) {
+        return CGRectIntersectsRect(rect, [evaluatedObject frame]);
+    }]];
 }
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)path
+{
+    return (self.itemAttributes)[path.item];
+}
+
+
 
 @end
