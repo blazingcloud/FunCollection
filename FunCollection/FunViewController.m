@@ -49,7 +49,9 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         return;
     
     UICollectionViewLayout *newLayout = nil;
-    
+    UICollectionView* view = self.collectionView;
+    CGFloat height = view.bounds.size.height;
+
     switch (layoutStyle)
     {
         case LayoutStyleGrid:
@@ -63,19 +65,17 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         case LayoutStyleLineFlow:
         {
             LineFlowLayout *newLineFlowLayout = [[LineFlowLayout alloc] init];
-            newLayout = newLineFlowLayout;
             
+            CGFloat top = height - newLineFlowLayout.itemSize.height -90;
+            newLineFlowLayout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
+            newLayout = newLineFlowLayout;
+
         }
         break;
 
         case LayoutStyleLine:
         {
             LineLayout *newLineLayout = [[LineLayout alloc] init];
-            
-            UICollectionView* view = self.collectionView;
-            CGFloat height = view.bounds.size.height;
-            CGFloat top = height - newLineLayout.itemSize.height - 90;
-            newLineLayout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
             newLayout = newLineLayout;
         }
         break;

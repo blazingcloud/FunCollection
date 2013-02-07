@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LineLayout : UICollectionViewFlowLayout
+@interface LineLayout : UICollectionViewLayout <UICollectionViewDelegateFlowLayout>
+
+@property CGSize itemSize;
+@property CGFloat interItemSpacing;
+@property CGFloat minMargin;
+@property NSMutableArray *itemHeightArray;
 
 @end

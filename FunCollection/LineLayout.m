@@ -18,11 +18,10 @@
     self = [super init];
     if (self)
     {
-        self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        // assume width is constant
         self.itemSize = (CGSize){60, 50};
-                
-        self.minimumLineSpacing = 5.0;
-        self.minimumInteritemSpacing = 5.0;
+        self.interItemSpacing = 5.0;
+        self.minMargin = 10.0;
         
     }
     return self;
@@ -32,13 +31,47 @@
 {
     // call super so flow layout can do all the math for cells, headers, and footers
     [super prepareLayout];
-    // do stuff
+
+    CGFloat contianerWidth = self.collectionView.bounds.size.width;
+    
+    NSInteger columnCount = floorf((contianerWidth - self.minMargin *2) / self.itemSize.width);
+    
+    NSInteger itemCount = [[self collectionView] numberOfItemsInSection:0];
+    
+    self.itemHeightArray = [NSMutableArray arrayWithCapacity:itemCount];
+
+    for (NSInteger i = 0; i < itemCount; i++) {
+        NSIndexPath* indexPath = [NSIndexPath indexPathForItem:i inSection:0];
+        
+        CGSize size = [self collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
+
+        self.itemHeightArray[i] = size.height;
+    }
 }
+
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)oldBounds
 {
+    if (oldBounds.size.width != self.collectionView.bounds.size.width)
+        return YES;
+    else
+        return NO;
+}
 
-    return YES;
+- (CGSize)collectionViewContentSize
+{
+    NSInteger itemCount = [[self collectionView] numberOfItemsInSection:0];
+    NSInteger columnCount = 0;
+    
+    CGSize containerSize = self.collectionView.bounds.size;
+    columnCount = floorf((containerSize.width - self.minMargin *2)/self.itemSize.width);
+    
+}
+
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
+{
+    
+    
 }
 
 @end
