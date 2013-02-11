@@ -44,7 +44,8 @@
     int currentx = self.minMargin;
     
     for (int i = 0; i < itemCount; i++) {
-        UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes new];
+        NSIndexPath* path = [NSIndexPath indexPathForItem:i inSection:0];
+        UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:path];
         attr.frame = CGRectMake(currentx, 0, self.itemSize.width, self.itemSize.height);
         [_itemAttributes addObject:attr];
         currentx += self.itemSize.width + self.interItemSpacing;
