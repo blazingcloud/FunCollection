@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Fun View Controller-->
@@ -40,9 +40,8 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Y1-Uj-oae">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="151" type="user" id="1wE-O8-7ud"/>
                                     <constraint firstAttribute="height" constant="43" type="user" id="cqd-K3-dXg"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" type="user" id="tV0-PP-NPz"/>
+                                    <constraint firstAttribute="width" constant="99" id="nYM-vO-wwQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Tap">
@@ -56,17 +55,32 @@
                                     <action selector="switchLayout:" destination="2" eventType="touchUpInside" id="som-dU-0nd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ec-qU-uCt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="0dI-MX-gUp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Animaitions">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="l0n-h8-Ctz" kind="modal" id="16b-Jg-D03"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="6Y1-Uj-oae" secondAttribute="trailing" constant="85" type="user" id="19Y-Dq-GSk"/>
-                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3" secondAttribute="leading" constant="84" type="user" id="28m-1J-Rii"/>
                             <constraint firstItem="6Y1-Uj-oae" firstAttribute="top" secondItem="k1L-RD-MS9" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="3hr-ev-qTd"/>
+                            <constraint firstItem="8ec-qU-uCt" firstAttribute="trailing" secondItem="k1L-RD-MS9" secondAttribute="trailing" type="default" id="5J1-WS-Y5w"/>
                             <constraint firstAttribute="bottom" secondItem="6Y1-Uj-oae" secondAttribute="bottom" constant="33" type="user" id="8Go-0D-lbS"/>
                             <constraint firstAttribute="trailing" secondItem="k1L-RD-MS9" secondAttribute="trailing" constant="10" type="user" id="F6j-rP-2fw"/>
                             <constraint firstItem="k1L-RD-MS9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="12" type="user" id="PQI-dn-zZr"/>
-                            <constraint firstAttribute="centerX" secondItem="k1L-RD-MS9" secondAttribute="centerX" type="user" id="eUa-rY-Q0V"/>
-                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="84" type="user" id="iJM-dN-UxQ"/>
+                            <constraint firstItem="6Y1-Uj-oae" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gVw-ky-f6x"/>
+                            <constraint firstItem="8ec-qU-uCt" firstAttribute="baseline" secondItem="6Y1-Uj-oae" secondAttribute="baseline" type="default" id="vJu-eM-y1S"/>
                         </constraints>
                     </view>
                     <connections>
@@ -77,34 +91,74 @@
             </objects>
             <point key="canvasLocation" x="-26" y="68"/>
         </scene>
+        <!--Animations View Controller-->
+        <scene sceneID="mHs-hQ-yWU">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="l0n-h8-Ctz" customClass="AnimationsViewController" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="EbC-t5-13d" customClass="DrawnView">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="x1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iae-Pr-Dsn">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ZHo-Kt-HLH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="x2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vS-gL-lgF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gkg-WZ-iai"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="y1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feL-ij-luK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="sWY-G3-HEk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="y2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHs-Mx-1Jy">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bkf-yd-vxG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v0y-lZ-Omo"/>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="XHs-Mx-1Jy" firstAttribute="top" secondItem="EbC-t5-13d" secondAttribute="top" constant="20" symbolic="YES" type="default" id="7bG-Mv-ckc"/>
+                            <constraint firstItem="v0y-lZ-Omo" firstAttribute="centerX" secondItem="EbC-t5-13d" secondAttribute="centerX" type="default" id="Jfh-LZ-bof"/>
+                            <constraint firstItem="feL-ij-luK" firstAttribute="leading" secondItem="iae-Pr-Dsn" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="K9C-l2-VeU"/>
+                            <constraint firstItem="iae-Pr-Dsn" firstAttribute="leading" secondItem="EbC-t5-13d" secondAttribute="leading" constant="10" id="NPt-Ni-6qk"/>
+                            <constraint firstItem="v0y-lZ-Omo" firstAttribute="bottom" secondItem="feL-ij-luK" secondAttribute="bottom" type="default" id="O5E-SD-TIp"/>
+                            <constraint firstItem="5vS-gL-lgF" firstAttribute="top" secondItem="EbC-t5-13d" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Ok1-Dk-teh"/>
+                            <constraint firstItem="5vS-gL-lgF" firstAttribute="leading" secondItem="v0y-lZ-Omo" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="PDT-vd-aKb"/>
+                            <constraint firstItem="iae-Pr-Dsn" firstAttribute="top" secondItem="EbC-t5-13d" secondAttribute="top" constant="20" symbolic="YES" type="default" id="WEP-DJ-Rpy"/>
+                            <constraint firstItem="XHs-Mx-1Jy" firstAttribute="leading" secondItem="5vS-gL-lgF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Zul-jd-FCs"/>
+                            <constraint firstItem="feL-ij-luK" firstAttribute="baseline" secondItem="iae-Pr-Dsn" secondAttribute="baseline" type="default" id="wWL-wZ-zzL"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="ab" destination="v0y-lZ-Omo" id="Aim-Q6-f87"/>
+                            <outlet property="x1" destination="iae-Pr-Dsn" id="22b-4D-B1T"/>
+                            <outlet property="x2" destination="5vS-gL-lgF" id="4pf-St-sw0"/>
+                            <outlet property="y1" destination="feL-ij-luK" id="GIh-qJ-4fq"/>
+                            <outlet property="y2" destination="XHs-Mx-1Jy" id="Zmr-DP-Q3B"/>
+                            <outletCollection property="gestureRecognizers" destination="eXn-0V-OQw" appends="YES" id="LsQ-nm-Akd"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Htd-bj-Jqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eXn-0V-OQw"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="68"/>
+        </scene>
     </scenes>
-    <classes>
-        <class className="FunViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FunViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="switchLayout:"/>
-                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="GridLayout" superclassName="UICollectionViewFlowLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GridLayout.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

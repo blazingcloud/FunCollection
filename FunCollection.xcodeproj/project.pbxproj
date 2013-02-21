@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C78050516CEBF85006E8B09 /* AnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C78050416CEBF85006E8B09 /* AnimationsViewController.m */; };
+		0C78050B16CEC310006E8B09 /* DrawnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C78050A16CEC310006E8B09 /* DrawnView.m */; };
 		2636F7A916BDDFFB004D9A06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636F7A816BDDFFB004D9A06 /* UIKit.framework */; };
 		2636F7AB16BDDFFB004D9A06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636F7AA16BDDFFB004D9A06 /* Foundation.framework */; };
 		2636F7AD16BDDFFB004D9A06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2636F7AC16BDDFFB004D9A06 /* CoreGraphics.framework */; };
@@ -27,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C78050316CEBF85006E8B09 /* AnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsViewController.h; sourceTree = "<group>"; };
+		0C78050416CEBF85006E8B09 /* AnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsViewController.m; sourceTree = "<group>"; };
+		0C78050916CEC310006E8B09 /* DrawnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawnView.h; sourceTree = "<group>"; };
+		0C78050A16CEC310006E8B09 /* DrawnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawnView.m; sourceTree = "<group>"; };
 		2636F7A416BDDFFB004D9A06 /* FunCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2636F7A816BDDFFB004D9A06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2636F7AA16BDDFFB004D9A06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +124,10 @@
 				2636F7AF16BDDFFB004D9A06 /* Supporting Files */,
 				26ADEAB316BF312D00687919 /* CustomCellBackground.h */,
 				26ADEAB416BF312D00687919 /* CustomCellBackground.m */,
+				0C78050316CEBF85006E8B09 /* AnimationsViewController.h */,
+				0C78050416CEBF85006E8B09 /* AnimationsViewController.m */,
+				0C78050916CEC310006E8B09 /* DrawnView.h */,
+				0C78050A16CEC310006E8B09 /* DrawnView.m */,
 			);
 			path = FunCollection;
 			sourceTree = "<group>";
@@ -211,6 +221,8 @@
 				26ADEAB216BF26D700687919 /* SimpleColorCell.m in Sources */,
 				26ADEAB516BF312D00687919 /* CustomCellBackground.m in Sources */,
 				26ADEAE316BF56C900687919 /* LineFlowLayout.m in Sources */,
+				0C78050516CEBF85006E8B09 /* AnimationsViewController.m in Sources */,
+				0C78050B16CEC310006E8B09 /* DrawnView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
